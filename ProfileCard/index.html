@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="inputContainer">
+        <input
+          type="text"
+          id="username"
+          placeholder="Enter GitHub user name..."
+        />
+        <button id="button" onclick="getUserData()">Get Profile</button>
+      </div>
+      <div id="userInfo">
+        <div class="card">
+          <div id="img"></div>
+          <div>
+            <p id="Name"></p>
+            <p id="Bio"></p>
+            <p id="followers"></p>
+            <p id="Repo"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
