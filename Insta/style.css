@@ -1,0 +1,21 @@
+body {
+/* display: flex; */
+
+/* height: 100vh; */
+margin: 0;
+background-color:#F1F1F1;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+    .pacman {
+        width: 100px;
+        height: 100px;
+        background-color: #ffeb3b;
+        border-radius: 50%;
+        position: relative;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 50% 50%, 50% 100%, 0% 100%);
+    }
+

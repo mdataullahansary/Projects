@@ -1,0 +1,21 @@
+
+.conatainer {
+    height: 100vh;
+    width: 100%;
+    /* background-color: rgb(184, 105, 1); */
+    display: flex;
+    justify-content: space-evenly;
+    
+    align-items: center;
+
+
+
+}
+
+
+.box {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    
+}

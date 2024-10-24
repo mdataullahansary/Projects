@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="conatainer">
+      <div class="box" id="red" style="background-color: red"></div>
+
+      <div class="box" id="blue" style="background-color: blue"></div>
+      <div class="box" id="green" style="background-color: green"></div>
+      <div class="box" id="pink" style="background-color: pink"></div>
+
+      <script>
+        const buttons = document.querySelectorAll(".box");
+        const body = document.querySelector("body");
+
+        buttons.forEach(function (button) {
+          console.log(button);
+          button.addEventListener("click", function (e) {
+            console.log(e);
+            console.log(e.target);
+            if (e.target.id === "pink") {
+              body.style.backgroundColor = e.target.id;
+            }
+            if (e.target.id === "green") {
+              body.style.backgroundColor = e.target.id;
+            }
+            if (e.target.id === "blue") {
+              body.style.backgroundColor = e.target.id;
+            }
+            if (e.target.id === "red") {
+              body.style.backgroundColor = e.target.id;
+            }
+          });
+        });
+      </script>
+    </div>
+  </body>
+</html>

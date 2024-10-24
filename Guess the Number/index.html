@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the Number</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Linking to the external CSS file -->
+  </head>
+  <body>
+    <div class="container">
+      <h1>Guess the Number</h1>
+
+      <p>Enter a Number:</p>
+      <input type="text" placeholder="Enter a number ..." id="guessField" />
+      <input type="submit" id="subt" value="Submit" />
+      <div class="resultParas">
+        <p>Previous Guesses: <span class="guesses"></span></p>
+        <p>Guesses Remaining: <span class="lastResult">10</span></p>
+        <p class="lowOrHigh"></p>
+      </div>
+      <button id="muteButton">Mute</button>
+    </div>
+    <audio id="backgroundMusic" loop>
+      <source src="game.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="correctGuessSound">
+      <source src="win.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="wrongGuessSound">
+      <source src="wrong.mp3" type="audio/mp3" />
+    </audio>
+    <script src="script.js"></script>
+    <!-- Linking to the external JavaScript file -->
+  </body>
+</html>
